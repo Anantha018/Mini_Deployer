@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Mini Deployer | Anantha Sridhar</title>
+    <link rel="stylesheet" href="/static/style.css">
+    <link  rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"/>
+</head>
+<body>
+
+<nav class="nav">
+    <div class="nav-left"><h2><i class="fa-brands fa-fly fa-xl" style="color: rgb(134, 116, 252);"></i> &nbsp;Mini Deployer</div></h2>
+    <div class="nav-right">
+        <a href="https://github.com/Anantha018" target="_blank">
+            <i class="fa-brands fa-github fa-lg"></i>
+             GitHub
+        </a> <br>
+        <a href="#">
+            <i class="fa-solid fa-file"></i>
+             Docs
+        </a> <br>
+        <a href="https://www.linkedin.com/in/anantha-sridhar-vedula-112607188/" target="_blank">
+            <i class="fa-brands fa-linkedin fa-lg"></i> 
+             Linkedin
+        </a>
+    </div>
+</nav>
+
+<div class="wrapper">
+
+    <div class="hero">
+        <h1> <i class="fa-brands fa-docker" style="color: rgb(38, 48, 181);"></i> &nbsp Ship Your App in One Click</h1>
+        <p> Push → Build → Live URL in seconds</p>
+    </div>
+
+    <div class="deploy-card">
+        <input id="repo" placeholder="GitHub Repository URL"> 
+        <input id="name" placeholder="Project Name">
+
+        <button id="deployBtn" onclick="deploy()">
+            <span id="btnContent">
+                <i id="btnIcon" class="fa-solid fa-rocket"></i>
+                <span id="btnText">Deploy</span>
+            </span>
+        </button>
+    </div>
+
+    <div class="founder">
+        <i class="fa-solid fa-code-commit"></i> &nbsp;
+        <img src="/static/profile.jpeg" alt="Anantha">
+        <span> Built by Anantha Sridhar</span>
+    </div>
+
+    <div class="console">
+        <div class="console-header">
+            <span>📟 Logs</span>
+            <span id="statusBadge" class="badge idle">Idle</span>
+        </div>
+        <pre id="logs"></pre>
+    </div>
+
+   <div id="successPanel" class="result hidden">
+        <div class="result-header">
+            <span class="result-icon"><i class="fa-solid fa-check" style="color: rgb(214, 222, 214);"></i></span>
+            <span class="result-title">Website Link</span>
+        </div>
+
+        <div class="result-body">
+            <a id="liveUrl"
+            href="#"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="result-link">
+            </a>
+
+            <button id="copyBtn" class="copy-btn" onclick="copyUrl()">
+                <i class="fa-solid fa-copy"></i>
+                <span id="copyText">Copy</span>
+            </button>
+        </div>
+    </div>
+
+    
+
+    <footer>
+        <div class="help">
+            <i class="fa-solid fa-envelope"></i> Need help?  <a href="mailto:sridharindie@gmail.com"> sridharindie@gmail.com</a>
+        </div>
+    </footer>
+
+</div>
+
+<script src="/static/app.js"></script>
+</body>
+</html>
