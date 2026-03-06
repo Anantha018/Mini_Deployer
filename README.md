@@ -2,13 +2,9 @@
 
 A lightweight Platform-as-a-Service (PaaS) that automatically deploys applications from GitHub repositories using Docker and Kubernetes (K3s).
 
-### Platform Demo:
+## 🎥 Platform Demo
 
-[![Watch Demo](https://img.youtube.com/vi/YOUTUBE_VIDEO_ID/0.jpg)](https://www.youtube.com/watch?v=YOUTUBE_VIDEO_ID)
-
-### Watch the full platform deployment tutorial:
-
-[![Watch Demo](https://img.youtube.com/vi/YOUTUBE_VIDEO_ID/0.jpg)](https://www.youtube.com/watch?v=YOUTUBE_VIDEO_ID)
+[![Watch the Demo](https://img.youtube.com/vi/Mvhvi2XvUTQ/0.jpg)](https://www.youtube.com/watch?v=Mvhvi2XvUTQ)
 
 
 Users submit a GitHub repository, and the platform automatically:
@@ -320,9 +316,9 @@ docker login
 
 Why is a Docker registry needed?
 
-Kubernetes does not build images.
+    - Kubernetes does not build images.
 
-It only pulls images from registries.
+    - It only pulls images from registries.
 
 Deployment flow:
 ```bash
